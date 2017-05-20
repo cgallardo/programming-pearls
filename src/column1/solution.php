@@ -22,5 +22,3 @@ foreach ($numbers as $key => $value) {
 unset($outputFile);
 
 echo "\nFinished";
-
-
