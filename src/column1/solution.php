@@ -1,6 +1,6 @@
 <?php
 
-function loadNumbers($inputFileName, &$numbers)
+function loadNumbers($inputFileName, array &$numbers)
 {
     $inputFile = new SplFileObject($inputFileName, 'r');
 
@@ -12,7 +12,7 @@ function loadNumbers($inputFileName, &$numbers)
     unset($inputFile);
 }
 
-function writeNumbers($outputFileName, $numbers)
+function writeNumbers($outputFileName, array $numbers)
 {
     $outputFile = new SplFileObject($outputFileName, 'w');
 
